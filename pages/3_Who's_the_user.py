@@ -29,7 +29,7 @@ st.session_state["user_name"] = st.sidebar.text_input(
 if st.session_state["user_name"]:
     user_name = st.session_state["user_name"] # user 
     repo_info = get_repo_list(user_name)
-    repo_list = repo_info[0] # user의 repo list
+    repo_list = repo_info[0] # user repo list
     user_info = get_avatar_info(user_name) # user 
     avatar_url = user_info['avatar_url']+'.png' # user 
     image_response = requests.get(avatar_url)
@@ -44,7 +44,7 @@ if st.session_state["user_name"]:
     
     df = pd.DataFrame(
         {
-            "avartar": avatar_url,
+            "avatar": avatar_url,
             # "e-mail": user_info['email'],
             "git rank" : git_stats[0],
             "total repos": user_info['public_repos'],
@@ -201,7 +201,7 @@ if st.session_state["user_name"]:
             stars = [star for star in repo_info[2]]
             repo_url = [url for url in repo_info[1]]
         
-        # 날짜 별 commit 수 flow chart
+        # commit flow chart
         with st.spinner('Getting commits...'):
             commits = [get_commits(user_name, repo) for repo in repo_name]
         commit_list = []
