@@ -1,6 +1,8 @@
 ## 🌌 Gitty!
 💡 When the **Open Source Hackfest** threw down the challenge to craft something that "_promotes the principle of sharing knowledge for the benefit of the wider community_", our brains sparked! What combines the vast universe of GitHub with the smartness of ChatGPT? Enter **"Gitty"!** 🚀          featuring🌐**Streamlit**, 🌱**MongoDB**, and ☁️**Google Cloud**!
 
+Check out the website on Streamlit Community ⭐: https://gitty-gitty-gitty.streamlit.app/
+
 ## 🖥️ What it does
 **Imagine having a personal guide for any GitHub repository.** 🌟 Gitty lets you toss in a GitHub repository URL, and in return, it unfurls a rich tapestry of information 📊 – from stars to collaborators, commit histories, and more. Dive deeper with our chatbox, powered by OpenAI's GPT, and ask **ANYTHING** about the repo. Curious about those fancy graphics and data? We got 'em! 📈
 
