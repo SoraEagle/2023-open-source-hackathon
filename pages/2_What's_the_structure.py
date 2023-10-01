@@ -24,11 +24,8 @@ def load_lottieurl(url: str ):
 point_url = "https://lottie.host/5fbefebf-0144-4a35-a463-c9a2186c0fab/Jym0vP7Azn.json"
 lottie_point = load_lottieurl(point_url)
 
-# https://github.com/PKief/vscode-material-icon-theme/tree/main#file-icons
 
 file_image_dict = {
-    # "확장자명": "https://github.com/PKief/vscode-material-icon-theme/blob/main/icons/{이_부분}.svg"
-    # "root" (별도): "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
     "py":"python", "pdf":"pdf", "txt":"text", 
     "dir":"folder-resource", "file":"lib",
     "ipynb":"python-misc", "exe":"exe", "jpg":"image",
