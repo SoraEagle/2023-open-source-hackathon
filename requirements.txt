@@ -55,6 +55,7 @@ jupyter_client==8.2.0
 jupyter_core==5.3.1
 kiwisolver==1.4.4
 langchain==0.0.221
+lottie==0.7.0
 langchainplus-sdk==0.0.20
 loguru==0.7.0
 lxml==4.9.3
@@ -131,6 +132,7 @@ streamlit-chat==0.1.1
 streamlit-elements==0.1.0
 streamlit-embedcode==0.1.2
 streamlit-extras==0.2.7
+streamlit-lottie==0.0.5
 streamlit-faker==0.0.2
 streamlit-image-coordinates==0.1.5
 streamlit-keyup==0.2.0
