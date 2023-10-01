@@ -8,11 +8,21 @@ from anytree import RenderTree
 from streamlit_agraph import agraph, Node, Edge, Config
 from streamlit_agraph.config import Config
 from githubqa.get_info_from_api import github_api_call, get_repo_list, get_avatar_info
+from streamlit_lottie import st_lottie
 
 st.set_page_config(layout="wide", page_title="What's the Structure?")
 
 initialize_session()
+st.title("User's Structure")
 
+def load_lottieurl(url: str ):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+point_url = "https://lottie.host/5fbefebf-0144-4a35-a463-c9a2186c0fab/Jym0vP7Azn.json"
+lottie_point = load_lottieurl(point_url)
 
 # https://github.com/PKief/vscode-material-icon-theme/tree/main#file-icons
 
@@ -219,3 +229,4 @@ if st.session_state["repo_url"]:
             # st.info("select your file_name")
 else:
     st.info('Please input **GitHub Username** and **Repository Name** in the left sidebar.')
+    st_lottie(lottie_point, key="hello", height=500)

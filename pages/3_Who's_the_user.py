@@ -12,13 +12,23 @@ from githubqa.get_info_from_api import (
 )
 from streamlit_elements import elements, mui
 from streamlit_elements import nivo
+from streamlit_lottie import st_lottie
+
 
 # pip install streamlit-elements # streamlit-elements==0.1.0
-
+st.set_page_config("Search User")
 initialize_session()
 
+def load_lottieurl(url: str ):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
-st.title("`Search User's Repo`")
+point_url = "https://lottie.host/5fbefebf-0144-4a35-a463-c9a2186c0fab/Jym0vP7Azn.json"
+lottie_point = load_lottieurl(point_url)
+
+st.title("Search User's Repo")
 
 st.session_state["user_name"] = st.sidebar.text_input(
     'GitHub User:',  key="github_user_input_search_whois", 
@@ -245,3 +255,5 @@ if st.session_state["user_name"]:
         )
     else:
         st.error("Invalid username")
+else: st.info('Please input **GitHub Username** in the left sidebar.')
+st_lottie(lottie_point, key="hello", height=500)
