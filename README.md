@@ -37,7 +37,9 @@ ChatGPT would explain the repository to them.
 ## Installation
 Required installations: Streamlit(library), MongoDB
 
-Streamlit requires you to utilize pip, and insert pip install streamlit
+Streamlit requires you to utilize pip, and insert 
+
+`pip install streamlit`
 
 
 MongoDB requires you to visit the official website and follow steps provided
@@ -46,7 +48,7 @@ Download the installer and install as a local server
 
 All information will be sent to the database hosted LOCALLY on your computer
 
-No on else will have access
+No one else will have access
 
 ## Contributing
 Pull requests are welcome.
