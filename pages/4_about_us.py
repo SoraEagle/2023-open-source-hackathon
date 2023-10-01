@@ -88,7 +88,7 @@ When the team thought about it, we all agreed that, pairing ChatGPT with an web 
         st.markdown("## Features")
         st.markdown(
             """
-            - Summarization of the users GitHub page.
+            - Summarization of the user's GitHub page.
             - Visualization of the chosen repository's file structure
             - Provides  code analysis 
          """
