@@ -18,6 +18,13 @@ ChatGPT would explain the repository to them.
 
 
 ## Contributing
+Pull requests are welcome.
+
+For major changes, please open an issue to discuss what you wish to change or add.
+
+If you do make major edits, do not claim this as your own original work!
+
+Always reference the original work [here](https://github.com/SoraEagle/2023-open-source-hackathon)
 
 
 ## Deploying
