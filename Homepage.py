@@ -28,12 +28,12 @@ lottie_point = load_lottieurl(point_url)
 initialize_session()
 
 st.set_page_config(
-    page_title="Git Scapper"
+    page_title="Gitty"
 )
 
 
 # 2. Sidebar username input
-st.sidebar.title("Git Scraper")
+st.sidebar.title("Gitty")
 st.session_state["user_name"] = st.sidebar.text_input(
     "GitHub Username:",
     key="github_user_input",

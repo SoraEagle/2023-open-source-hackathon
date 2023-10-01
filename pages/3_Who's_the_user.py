@@ -255,5 +255,6 @@ if st.session_state["user_name"]:
         )
     else:
         st.error("Invalid username")
-else: st.info('Please input **GitHub Username** in the left sidebar.')
-st_lottie(lottie_point, key="hello", height=500)
+else: 
+    st.info('Please input **GitHub Username** in the left sidebar.')
+    st_lottie(lottie_point, key="hello", height=500)
